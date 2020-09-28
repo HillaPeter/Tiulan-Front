@@ -36,11 +36,6 @@
                 <!-- <a class="nav-link" :to="{ name: 'About' }">ראשי</a> -->
                  <b-nav-item class="nav-link" :to="{ name: 'Recommand' }">המלצות</b-nav-item>
             </li>
-             
-            <li class="nav-item">
-                <!-- <a class="nav-link" :to="{ name: 'About' }">ראשי</a> -->
-                 <b-nav-item class="nav-link" :to="{ name: 'About' }">?מי אנחנו</b-nav-item>
-            </li>
             <li class="nav-item">
                 <!-- <a class="nav-link" :to="{ name: 'About' }">ראשי</a> -->
                  <b-nav-item class="nav-link" :to="{ name: 'Rent' }">השכרת ציוד</b-nav-item>
@@ -81,7 +76,7 @@
         background-image: url("../back.jpg");
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        color: #af1313;
+        color: #1B411A;
         font-size: 20px;
         font-weight: bold;
 
