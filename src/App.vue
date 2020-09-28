@@ -47,7 +47,7 @@
            
         </ul>
          
-         <img src="https://res.cloudinary.com/drrtdb9ya/image/upload/v1601232611/Tiulan/logonew_kl6m7c.png" width="200px" height="200px"/>
+         <img src="https://res.cloudinary.com/drrtdb9ya/image/upload/v1601232611/Tiulan/logonew_kl6m7c.png" width="170px" height="170px"/>
     
     </div>
 </nav>

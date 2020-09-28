@@ -13,6 +13,12 @@ const routes = [
     component: () => import("./pages/Recommand"),
   },
   {
+    path: "/Reservation",
+    name: "Reservation",
+    component: () => import("./pages/Reservation"),
+  },
+ 
+  {
     path: "/Rent",
     name: "Rent",
     component: () => import("./pages/Rent"),

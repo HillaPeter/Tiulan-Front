@@ -28,7 +28,7 @@
             ></b-carousel-slide>
             <b-carousel-slide
               style=" width:700px; height: 500px !important;"
-              img-src="https://res.cloudinary.com/drrtdb9ya/image/upload/v1601299862/Tiulan/119437041_152024309920570_7618206156853352439_o_tl5fhj.jpg"
+              img-src="https://res.cloudinary.com/drrtdb9ya/image/upload/v1601310453/Tiulan/sdfsdf_nmioc2.jpg"
             ></b-carousel-slide>
             <b-carousel-slide
               style=" width:700px; height: 500px !important;"
@@ -37,6 +37,18 @@
             <b-carousel-slide
               style=" width:700px; height: 500px !important;"
               img-src="https://res.cloudinary.com/drrtdb9ya/image/upload/v1601299869/Tiulan/%D7%AA%D7%9E%D7%95%D7%A0%D7%94_-_%D7%99%D7%99%D7%9F_bl87ua.jpg"
+            ></b-carousel-slide>
+            <b-carousel-slide
+              style=" width:700px; height: 500px !important;"
+              img-src="https://res.cloudinary.com/drrtdb9ya/image/upload/v1601310687/Tiulan/WhatsApp_Image_2020-09-28_at_19.29.46_cto4cr.jpg"
+            ></b-carousel-slide>
+            <b-carousel-slide
+              style=" width:700px; height: 500px !important;"
+              img-src="https://res.cloudinary.com/drrtdb9ya/image/upload/v1601310571/Tiulan/WhatsApp_Image_2020-09-28_at_19.28.24_1_p6dws4.jpg"
+            ></b-carousel-slide>
+             <b-carousel-slide
+              style=" width:700px; height: 500px !important;"
+              img-src="https://res.cloudinary.com/drrtdb9ya/image/upload/v1601310579/Tiulan/WhatsApp_Image_2020-09-28_at_19.27.10_brea5n.jpg"
             ></b-carousel-slide>
           </b-carousel>
         </b-col>
@@ -77,13 +89,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.aboutMe {
-  text-align: center;
-
-  font-family: "Fira Sans Extra Condensed", sans-serif;
-  color: #585858;
-  font-size: 20px;
-}
 .carousel {
   border-radius: 8px 8px 8px 8px;
   overflow: hidden;
