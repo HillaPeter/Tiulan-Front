@@ -18,6 +18,7 @@ Vue.component('b-carousel', BCarousel);
 import { CarouselPlugin } from 'bootstrap-vue'
 Vue.use(CarouselPlugin)
 
+
 // import VueCookies from "vue-cookies";
 // Vue.use(VueCookies);
 

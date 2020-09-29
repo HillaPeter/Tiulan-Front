@@ -1,6 +1,7 @@
 
 <template>
     <div id="app">
+
         <div id="menu">
             <!-- <p id="title">Tiulan</p>
              -->
@@ -47,7 +48,7 @@
            
         </ul>
          
-         <img src="https://res.cloudinary.com/drrtdb9ya/image/upload/v1601232611/Tiulan/logonew_kl6m7c.png" width="170px" height="170px"/>
+         <img src="https://res.cloudinary.com/drrtdb9ya/image/upload/v1601314959/Tiulan/imageedit_5_7722011839_gchlwh.png" width="170px" height="170px"/>
     
     </div>
 </nav>
