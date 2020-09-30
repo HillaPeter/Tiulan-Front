@@ -20,8 +20,16 @@
       <b-row id="col" v-for="p in products" :key="p.id">
         <ProductComponent class="ProductComponent" :product="p"/>
         <br>
+
       </b-row>
     </table>
+
+              <img
+               
+                src="https://img.icons8.com/ios/50/000000/buy.png"
+                width="50px"
+                height="50px"
+              />
   </div>
   </b-container >
 </template>
@@ -69,7 +77,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-img{
-  padding-right: 200px;
-  padding-left: 0px;
-}</style>
+</style>

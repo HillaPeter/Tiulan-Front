@@ -4,13 +4,6 @@
     <table>
       <b-row>
         <b-col>
-          <img
-            src="https://res.cloudinary.com/drrtdb9ya/image/upload/v1601317414/Tiulan/WhatsApp_Image_2020-09-28_at_19.28.24_foljcd.jpg"
-            width="550px"
-            height="350px"
-          />
-        </b-col>
-        <b-col>
           <ul align="right">
             <li>ההשכרה הינה ל-24 שעות</li>
             <li>הנחה של 30% למזמינים לילה שני ושלישי</li>
@@ -21,12 +14,19 @@
             <li>ערכה מלאה כוללת את כל הציוד שמופיע בתפריט</li>
           </ul>
           <br />
-
-          <button>
+<br /><br /><br />
+          <!-- <button align="center"> -->
             <router-link id="routerLink" :to="{ name: 'Reservation' }">
               להזמנה
             </router-link>
-          </button>
+          <!-- </button> -->
+        </b-col>
+        <b-col>
+          <img
+            src="https://res.cloudinary.com/drrtdb9ya/image/upload/v1601299869/Tiulan/%D7%AA%D7%9E%D7%95%D7%A0%D7%94_-_%D7%99%D7%99%D7%9F_bl87ua.jpg"
+            width="550px"
+            height="350px"
+          />
         </b-col>
       </b-row>
     </table>
@@ -36,15 +36,12 @@
 </template>
 
 <style scoped>
-#content {
-  font-family: "Fira Sans Extra Condensed", sans-serif;
-  color: rgb(107, 106, 105);
-}
+
 ul {
   /* list-style-type: none; */
   direction: rtl;
   padding-left: 0px;
-  padding-right: 20px;
+  padding-right: 65px;
 }
 
 #table {
@@ -52,12 +49,24 @@ ul {
   background-color: #ecced0;
 }
 img {
-  border-radius: 8px 8px 8px 8px;
+  border-radius: 20px 20px 20px 20px;
+  border: 5px solid #571845;
 }
 #routerLink {
   text-decoration: none;
-  color: #467845;
-  font-size: 20px;
+  color: #571845;
+  font-size: 25px;
   font-weight: bold;
+  border-radius: 2px 2px 2px 2px;
+  border: 2px solid #571845;
+
+
 }
+
+button {
+  border-radius: 20px 20px 20px 20px;
+  border: 2px solid #571845;
+  background: #ffffff;
+}
+
 </style>

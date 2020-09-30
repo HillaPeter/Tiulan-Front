@@ -78,25 +78,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .table{
-        color:	#467845;
-        font-size: 20px;
-    }
-    label{
-      color:	#467845;
-    }
-    // input{
-    //    color:	#000000;
-    //    font-size: 20px;
-    //     // font-weight: bold;
-    //      box-shadow: 0 0 5px #21971f;
+    // .table{
+    //     color:	#467845;
+    //     font-size: 20px;
     // }
-    // textarea{
-    //   color:	#000000;
-    //    font-size: 20px;
-    //     // font-weight: bold;
-    //      box-shadow: 0 0 5px #21971f;
+    // label{
+    //   color:	#467845;
     // }
+    // // input{
+    // //    color:	#000000;
+    // //    font-size: 20px;
+    // //     // font-weight: bold;
+    // //      box-shadow: 0 0 5px #21971f;
+    // // }
+    // // textarea{
+    // //   color:	#000000;
+    // //    font-size: 20px;
+    // //     // font-weight: bold;
+    // //      box-shadow: 0 0 5px #21971f;
+    // // }
   input:focus { 
     outline: none !important;
     border-color: #21971f;
