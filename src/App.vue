@@ -24,7 +24,7 @@
             <a href="https://api.whatsapp.com/send?phone=+972542677764" target="_blank"><img src="https://img.icons8.com/color/48/000000/whatsapp.png" height="50px" width="50px"/></a>
             </li>
             <li class="nav-item">
-            <a href="https://www.facebook.com/GolanTravell" target="_blank"><img src="https://img.icons8.com/color/48/000000/facebook-new.png" height="50px" width="50px"/></a>
+            <a href="https://www.facebook.com/Tiulantravel" target="_blank"><img src="https://img.icons8.com/color/48/000000/facebook-new.png" height="50px" width="50px"/></a>
             </li>
              <li class="nav-item">
             <a href="https://www.instagram.com/tiu.lan/" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" height="50px" width="50px"/></a>
