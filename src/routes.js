@@ -13,9 +13,9 @@ const routes = [
     component: () => import("./pages/Recommand"),
   },
   {
-    path: "/Reservation",
-    name: "Reservation",
-    component: () => import("./pages/Reservation"),
+    path: "/Catalog",
+    name: "Catalog",
+    component: () => import("./pages/Catalog"),
   },
   {
     path: "/Rent",
@@ -31,6 +31,11 @@ const routes = [
     path: "/Order",
     name: "Order",
     component: () => import("./pages/Order"),
+  },
+  {
+    path: "/About",
+    name: "About",
+    component: () => import("./pages/About"),
   },
 ];
 

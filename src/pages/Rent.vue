@@ -16,7 +16,7 @@
           <br />
 <br /><br /><br />
           <!-- <button align="center"> -->
-            <router-link id="routerLink" :to="{ name: 'Reservation' }">
+            <router-link id="routerLink" :to="{ name: 'Catalog' }">
               להזמנה
             </router-link>
           <!-- </button> -->

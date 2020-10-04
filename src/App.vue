@@ -97,6 +97,12 @@
                 >השכרת ציוד</b-nav-item
               >
             </li>
+              <li class="nav-item">
+              <!-- <a class="nav-link" :to="{ name: 'About' }">ראשי</a> -->
+              <b-nav-item class="nav-link" :to="{ name: 'About' }"
+                >?מי אנחנו</b-nav-item
+              >
+            </li>
             <li class="nav-item">
               <b-nav-item class="nav-link" :to="{ name: 'Main' }"
                 >ראשי</b-nav-item
