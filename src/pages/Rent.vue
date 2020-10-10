@@ -49,17 +49,22 @@ ul {
   background-color: #ecced0;
 }
 img {
-  border-radius: 20px 20px 20px 20px;
-  border: 5px solid #571845;
+  /* border-radius: 20px 20px 20px 20px;
+  border: 5px solid #571845; */
+   border: 5px solid;
+  border-image-source: linear-gradient(200deg,#571845 , #ff7c00, #fec400);
+  border-image-slice: 1;
 }
 #routerLink {
   text-decoration: none;
   color: #571845;
   font-size: 25px;
-  font-weight: bold;
-  border-radius: 2px 2px 2px 2px;
-  border: 2px solid #571845;
-
+  /* font-weight: bold; */
+  /* border-radius: 2px 2px 2px 2px;
+  border: 2px solid #571845; */
+ border: 2px solid;
+  border-image-source: linear-gradient(200deg,#571845 , #ff7c00, #fec400);
+  border-image-slice: 1;
 
 }
 

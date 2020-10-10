@@ -76,8 +76,9 @@ export default {
   height: 250px;
   background-color: rgba($color: #ffffff, $alpha: 0.8);
   overflow: hidden;
-  border-radius: 20px 20px 20px 20px;
-  border: 5px solid #571845;
+    border: 5px solid;
+  border-image-source: linear-gradient(200deg,#571845 , #ff7c00, #fec400);
+  border-image-slice: 1;
   // padding-left: 10px;
   // padding-top: 10px;
   // padding-right: 10px;
@@ -91,8 +92,9 @@ img {
   width: 40px !important;
   height: 40px !important;
   cursor: pointer;
-  border-radius: 5px 5px 5px 5px;
-  border: 3px solid #571845;
+  border: 2px solid;
+  border-image-source: linear-gradient(200deg,#571845 , #ff7c00, #fec400);
+  border-image-slice: 1;
 }
 
 table {
@@ -114,7 +116,10 @@ table {
   left: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.8);
-  color: #571845;
+  color:linear-gradient(#571845 , #ff7c00, #fec400);
+  //   border: 5px solid;
+  // border-image-source: linear-gradient(200deg,#571845 , #ff7c00, #fec400);
+  // border-image-slice: 1;
   visibility: hidden;
   opacity: 0;
   display: flex;

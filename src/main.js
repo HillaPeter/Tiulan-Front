@@ -18,12 +18,11 @@ Vue.component('b-carousel', BCarousel);
 import { CarouselPlugin } from 'bootstrap-vue'
 Vue.use(CarouselPlugin)
 
+import VCalendar from 'v-calendar';
 
-// import VueCookies from "vue-cookies";
-// Vue.use(VueCookies);
 
-import { BProgress } from 'bootstrap-vue';
-Vue.component('b-progress', BProgress);
+Vue.use(VCalendar);
+
 
 import Vuelidate from "vuelidate";
 import "bootstrap/dist/css/bootstrap.css";
@@ -81,28 +80,32 @@ Vue.use(VueAxios, axios);
 
 Vue.config.productionTip = false;
 
-const shared_data = {
-  username: localStorage.username,
-  login(username) {
-    localStorage.setItem("username", username);
-    this.username = username;
-    console.log("login", this.username);
-  },
-  logout() {
-    console.log("logout");
-    localStorage.removeItem("username");
-    this.username = undefined;
-  },
-};
-console.log(shared_data);
+// const shared_data = {
+//   username: localStorage.username,
+//   login(username) {
+//     localStorage.setItem("username", username);
+//     this.username = username;
+//     console.log("login", this.username);
+//   },
+//   logout() {
+//     console.log("logout");
+//     localStorage.removeItem("username");
+//     this.username = undefined;
+//   },
+// };
+// console.log(shared_data);
 // Vue.prototype.$root.store = shared_data;
 
 new Vue({
+  el: "#app",
+  
+  components: { App },
+  template: "<App/>",
   router,
   data() {
-    return {
-      store: shared_data,
-    };
+    // return {
+    //   store: shared_data,
+    // };
   },
   methods: {
     toast(title, content, variant = null, append = false) {

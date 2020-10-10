@@ -93,8 +93,14 @@ export default {
 <style lang="scss" scoped>
 .carousel {
   overflow: hidden;
-  border-radius: 20px 20px 20px 20px;
-  border: 5px solid #571845 ;
+  // border-radius: 20px 20px 20px 20px;
+  // border: 5px solid #571845 ;
+  border: 5px solid;
+  border-image-source: linear-gradient(200deg,#571845 , #ff7c00, #fec400);
+  border-image-slice: 1;
+   //#571845 10%,
+  //   #ff7c00 30%,
+  //   #fec400 60%,
 }
 .tab {
   margin-right: 60px;

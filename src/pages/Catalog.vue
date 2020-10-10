@@ -1,46 +1,35 @@
 <template>
-<b-container id="contain">
-  <div align="center">
-    <table>
-      <!-- <b-row>
-        <b-col>
-          מחיר
-        </b-col>
-         <b-col>
-          כמות במלאי
-        </b-col>
-         <b-col>
-          פירוט
-        </b-col>
-         <b-col>
-          שם המוצר
-        </b-col>
-      </b-row> -->
+  <b-container id="contain">
+    <div align="center">
+      <table>
+          <b-row id="col" alignment="right" >
+                :בחר/י תאריכים להשכרה
+                <br>
 
-      <b-row id="col" v-for="p in products" :key="p.id">
-        <ProductComponent class="ProductComponent" :product="p"/>
-        <br>
+                <br>
+        </b-row>
 
-      </b-row>
-    </table>
-
-              <img
-               
-                src="https://img.icons8.com/ios/50/000000/buy.png"
-                width="50px"
-                height="50px"
-              />
-  </div>
-  </b-container >
+        <b-row id="col">
+          <DateComponent class="DateComponent" />
+        </b-row>
+        <b-row id="col" v-for="p in products" :key="p.id">
+          <ProductComponent class="ProductComponent" :product="p" />
+          <br />
+        </b-row>
+      </table>
+    </div>
+  </b-container>
 </template>
 
 <script>
 import ProductComponent from "../components/ProductComponent.vue";
+import DateComponent from "../components/DateComponent.vue";
 export default {
-   name: "Reservation",
-   components: {
-            ProductComponent
-        },
+  name: "Reservation",
+  components: {
+    ProductComponent,
+    DateComponent,
+  },
   data() {
     return {
       products: Object,
@@ -53,7 +42,8 @@ export default {
       name: "ערכת בישול",
       amount: 5,
       price: 25,
-      description: "סיר, מחברת, צלחות, קערות, סכום, תבלינים, קרש חיתוך, כוסות, כוסות יין ועוד",
+      description:
+        "סיר, מחברת, צלחות, קערות, סכום, תבלינים, קרש חיתוך, כוסות, כוסות יין ועוד",
     };
 
     let cleaning = {
@@ -62,7 +52,8 @@ export default {
       name: "ערכת היגיינה",
       amount: 10,
       price: 25,
-      description: "נייר טואלט וסופג, מגבונים, שקיות זבל, סבון, אלכוג'ל, סקוצ'ים, עזרה ראשונה, אלוורה ועוד",
+      description:
+        "נייר טואלט וסופג, מגבונים, שקיות זבל, סבון, אלכוג'ל, סקוצ'ים, עזרה ראשונה, אלוורה ועוד",
     };
 
     let data = [];
@@ -77,4 +68,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-</style>
+#col{
+color:#571845;
+font-size: 25px;
+
+}</style>
