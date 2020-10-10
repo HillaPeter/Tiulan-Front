@@ -3,16 +3,19 @@
     <div align="center">
       <table>
         <b-row id="table" alignment="right">
-          <b-col>
-            <DateComponent class="DateComponent" />
+           <b-col>
+            <br>
+          </b-col>
+          <b-col id="dateC" >
+            <DateComponent class="DateComponent" @updateDates="dates" />
           </b-col>
           <b-col>
-            :בחר/י תאריכים להשכרה
+            <br>
           </b-col>
         </b-row>
         <b-row id="col" v-for="p in products" :key="p.id">
           <b-col id="row" v-for="p1 in p" :key="p1.id">
-            <ProductComponent class="ProductComponent" :product="p1" />
+            <ItemAvailable class="ItemAvailable" :product="p1" />
           </b-col>
         </b-row>
       </table>
@@ -21,20 +24,22 @@
 </template>
 
 <script>
-import ProductComponent from "../components/ProductComponent.vue";
+import ItemAvailable from "../components/ItemAvailable.vue";
 import DateComponent from "../components/DateComponent.vue";
 export default {
   name: "Reservation",
   components: {
-    ProductComponent,
+    ItemAvailable,
     DateComponent,
   },
   data() {
     return {
       products: Object,
+      dates: Object
     };
   },
   created() {
+    console.log(this.dates);
     //TODO: try catch the response..
     //  const response = await this.axios.get(
     //                        "address of the request"
@@ -150,6 +155,9 @@ export default {
   color: #571845;
   font-size: 25px;
   align-content: center;
+}
+#dateC{
+  width: 800px;
 }
 // #row{
 //   width: 50px;

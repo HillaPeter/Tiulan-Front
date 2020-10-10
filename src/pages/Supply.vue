@@ -26,7 +26,7 @@ export default {
     };
   },
   created() {
-    //TODO: try catch the response..
+    //TODO: try catch the response..DOnt need price and amount- this is show all the supply that Tiulan has.
     //  const response = await this.axios.get(
     //                        "address of the request"
     //                    );
@@ -43,8 +43,6 @@ export default {
     let cooking = {
       id: "12345",
       name: "ערכת בישול",
-      price: 25,
-      amount: 5,
       description:
         "סיר, מחברת, צלחות, קערות, סכום, תבלינים, קרש חיתוך, כוסות, כוסות יין ועוד",
       image:
@@ -54,8 +52,6 @@ export default {
     let cooking1 = {
       id: "123451",
       name: "ערכת בישול",
-      price: 25,
-      amount: 5,
       description:
         "סיר, מחברת, צלחות, קערות, סכום, תבלינים, קרש חיתוך, כוסות, כוסות יין ועוד",
       image:
@@ -65,8 +61,6 @@ export default {
     let cooking2 = {
       id: "123452",
       name: "ערכת בישול",
-      price: 25,
-      amount: 5,
       description:
         "סיר, מחברת, צלחות, קערות, סכום, תבלינים, קרש חיתוך, כוסות, כוסות יין ועוד",
       image:
@@ -76,8 +70,6 @@ export default {
     let cooking3 = {
       id: "123453",
       name: "ערכת בישול",
-      price: 25,
-      amount: 5,
       description:
         "סיר, מחברת, צלחות, קערות, סכום, תבלינים, קרש חיתוך, כוסות, כוסות יין ועוד",
       image:
@@ -87,8 +79,6 @@ export default {
     let cooking4 = {
       id: "123454",
       name: "ערכת בישול",
-      price: 25,
-      amount: 5,
       description:
         "סיר, מחברת, צלחות, קערות, סכום, תבלינים, קרש חיתוך, כוסות, כוסות יין ועוד",
       image:
@@ -100,8 +90,6 @@ export default {
       image:
         "https://res.cloudinary.com/drrtdb9ya/image/upload/v1601299865/Tiulan/119232033_152024263253908_952114860864678550_o_a2xnpq.jpg",
       name: "אוהל אותנטיק ל4 אנשים",
-      amount: 2,
-      price: 30,
       description: "אוהל ל4 נפתח ברגע",
     };
 

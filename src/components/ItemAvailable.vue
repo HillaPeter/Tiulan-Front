@@ -15,6 +15,32 @@
               <p align="center" id="desc">{{ product.description }}</p>
             </b-col>
           </b-row>
+          <b-row>
+            <b-col>
+              <p align="center" id="desc">
+                מחיר: {{ product.price }} ש"ח
+              </p>
+            </b-col>
+          </b-row>
+          <b-row>
+            <div v-if="!orderList">
+              <img
+                v-on:click="updateBuy()"
+                id="buy"
+                src="https://img.icons8.com/ios/50/000000/buy.png"
+              />
+            </div>
+
+            <div v-else-if="orderList">
+              <img
+                v-on:click="updateBuy()"
+                id="buy"
+                src="https://img.icons8.com/ios/50/000000/return-purchase.png"
+                width="50px"
+                height="50px"
+              />
+            </div>
+          </b-row>
         </table>
       </div>
     </div>
@@ -26,13 +52,18 @@
 export default {
   data() {
     return {
-      // orderList: false,
+      orderList: false,
     };
   },
   props: {
     product: {
       type: Object,
       required: true,
+    },
+  },
+  methods: {
+    updateBuy() {
+      this.orderList = !this.orderList;
     },
   },
 };

@@ -111,7 +111,7 @@ export default {
 #header{
     font-size: 60px;
   font-weight: bold;
-  background: -webkit-linear-gradient(#571845 40%, #ff7c00, #fec400);
+  background: -webkit-linear-gradient(#571845 50%, #ff7c00, #fec400);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
