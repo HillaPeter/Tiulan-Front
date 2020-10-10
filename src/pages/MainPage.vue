@@ -11,7 +11,7 @@
             <br /><br />
           </p>
 
-          <h1 class="tab">
+          <h1 class="tab" id="header">
             טיו-לן מסדר אותך בשטח
           </h1>
         </b-col>
@@ -106,5 +106,13 @@ export default {
   margin-right: 60px;
   margin-left: 0px;
   margin-top: 100px;
+  text-width: bold;
+}
+#header{
+    font-size: 60px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#571845 40%, #ff7c00, #fec400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>

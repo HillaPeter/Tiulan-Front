@@ -2,15 +2,15 @@
   <div id="app">
   <v-date-picker
      mode='range'
-    tint-color='#f142f4'
+    color="purple"
     v-model='selectedDate'
- 
+    locale="he" 
     is-double-paned
     :min-date='new Date()'
     is-inline>
   </v-date-picker>
-  :התחלה {{selectedDate}} <br>
-  :סיום {{selectedDate}} <br>
+   {{selectedDate}}:התחלה <br>
+   {{selectedDate}}:סיום  <br>
   </div>
 </template>
 
@@ -34,7 +34,7 @@ export default {
           borderLeft: '1px solid #404c59',
         },
         weekdays: {
-          color: '#ffffff',
+          color: '#f142f4',
           backgroundColor: '#f142f4',
           borderColor: '#ff0098',
           borderWidth: '0 1px',

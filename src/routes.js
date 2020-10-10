@@ -23,6 +23,11 @@ const routes = [
     component: () => import("./pages/Rent"),
   },
   {
+    path: "/Supply",
+    name: "Supply",
+    component: () => import("./pages/Supply"),
+  },
+  {
     path: "/Contact",
     name: "Contact",
     component: () => import("./pages/Contact"),

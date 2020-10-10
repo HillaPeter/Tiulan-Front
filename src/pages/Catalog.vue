@@ -2,19 +2,18 @@
   <b-container id="contain">
     <div align="center">
       <table>
-          <b-row id="col" alignment="right" >
-                :בחר/י תאריכים להשכרה
-                <br>
+        <b-row id="table" alignment="right">
+          :בחר/י תאריכים להשכרה
 
-                <br>
         </b-row>
 
-        <b-row id="col">
+        <b-row id="table">
           <DateComponent class="DateComponent" />
         </b-row>
         <b-row id="col" v-for="p in products" :key="p.id">
-          <ProductComponent class="ProductComponent" :product="p" />
-          <br />
+          <b-col id="row" v-for="p1 in p" :key="p1.id">
+            <ProductComponent class="ProductComponent" :product="p1" />
+          </b-col>
         </b-row>
       </table>
     </div>
@@ -36,30 +35,81 @@ export default {
     };
   },
   created() {
+    //TODO: try catch the response..
+    //  const response = await this.axios.get(
+    //                        "address of the request"
+    //                    );
+
+    //     {
+    //     id:response._id,
+    //     name:response.name,
+    //     price:response.price,
+    //     amount:response.amounr,
+    //     description:response.description
+    // image: cloudinary??
+    // }
+
     let cooking = {
-      image:
-        "https://res.cloudinary.com/drrtdb9ya/image/upload/v1601317414/Tiulan/WhatsApp_Image_2020-09-28_at_19.28.24_foljcd.jpg",
+      id: "12345",
       name: "ערכת בישול",
-      amount: 5,
       price: 25,
+      amount: 5,
       description:
         "סיר, מחברת, צלחות, קערות, סכום, תבלינים, קרש חיתוך, כוסות, כוסות יין ועוד",
-    };
-
-    let cleaning = {
       image:
-        "https://res.cloudinary.com/drrtdb9ya/image/upload/v1601311617/Tiulan/WhatsApp_Image_2020-09-28_at_19.32.03_escozi.jpg",
-      name: "ערכת היגיינה",
-      amount: 10,
-      price: 25,
-      description:
-        "נייר טואלט וסופג, מגבונים, שקיות זבל, סבון, אלכוג'ל, סקוצ'ים, עזרה ראשונה, אלוורה ועוד",
+        "https://res.cloudinary.com/drrtdb9ya/image/upload/v1601317414/Tiulan/WhatsApp_Image_2020-09-28_at_19.28.24_foljcd.jpg",
     };
 
-    let data = [];
-    data.push(cooking);
-    data.push(cleaning);
+        let cooking1 = {
+      id: "123451",
+      name: "ערכת בישול",
+      price: 25,
+      amount: 5,
+      description:
+        "סיר, מחברת, צלחות, קערות, סכום, תבלינים, קרש חיתוך, כוסות, כוסות יין ועוד",
+      image:
+        "https://res.cloudinary.com/drrtdb9ya/image/upload/v1601317414/Tiulan/WhatsApp_Image_2020-09-28_at_19.28.24_foljcd.jpg",
+    };
 
+        let cooking2 = {
+      id: "123452",
+      name: "ערכת בישול",
+      price: 25,
+      amount: 5,
+      description:
+        "סיר, מחברת, צלחות, קערות, סכום, תבלינים, קרש חיתוך, כוסות, כוסות יין ועוד",
+      image:
+        "https://res.cloudinary.com/drrtdb9ya/image/upload/v1601317414/Tiulan/WhatsApp_Image_2020-09-28_at_19.28.24_foljcd.jpg",
+    };
+
+    let tent4people = {
+      id: "12345678",
+      image:
+        "https://res.cloudinary.com/drrtdb9ya/image/upload/v1601299865/Tiulan/119232033_152024263253908_952114860864678550_o_a2xnpq.jpg",
+      name: "אוהל אותנטיק ל4 אנשים",
+      amount: 2,
+      price: 30,
+      description: "אוהל ל4 נפתח ברגע",
+    };
+
+   
+    let data = [];
+    let data1 = [];
+    let data2 = [];
+
+    data1.push(cooking);
+    data1.push(tent4people);
+    // let cooking1 = cooking;
+    // let cooking2 = cooking;
+    // data1.push(cooking2);
+    let tent4people1 = tent4people;
+    let tent4people2 = tent4people;
+    data2.push(cooking1);
+    data2.push(cooking2);
+    // data2.push(tent4people2);
+
+    data.push(data1);
+    data.push(data2);
     console.log(data);
 
     this.products = data;
@@ -68,8 +118,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#col{
-color:#571845;
-font-size: 25px;
-
-}</style>
+#col {
+  color: #571845;
+  font-size: 25px;
+  width: 900px;
+}
+#table{
+    color: #571845;
+}
+#row{
+  width: 50px;
+}
+</style>

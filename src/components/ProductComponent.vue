@@ -1,16 +1,15 @@
 <template>
   <div align="center">
+    
     <div class="img__wrap" id="container">
       <img class="img__img" :src="product.image" />
-      <div class="img__description_layer">
-        <table>
-          <b-row>
-            <b-col>
-              <p align="center" id="name" class="img__description">
+                  <p align="center" id="name" class="img__description">
                 {{ product.name }}
               </p>
-            </b-col>
-          </b-row>
+      <div class="img__description_layer">
+
+        <table>
+        
           <b-row>
             <b-col>
               <p align="center" id="desc">{{ product.description }}</p>
@@ -73,20 +72,22 @@ export default {
 <style lang="scss" scoped>
 #container {
   width: 400px;
-  height: 250px;
+  height: 320px;
   background-color: rgba($color: #ffffff, $alpha: 0.8);
   overflow: hidden;
-    border: 5px solid;
+  border: 5px solid;
+ 
   border-image-source: linear-gradient(200deg,#571845 , #ff7c00, #fec400);
   border-image-slice: 1;
-  // padding-left: 10px;
-  // padding-top: 10px;
-  // padding-right: 10px;
-  // padding-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }
 img {
-  width: 410px;
-  height: 260px;
+  width: 370px;
+  height: 230px;
+
 }
 #buy {
   width: 40px !important;
@@ -115,7 +116,8 @@ table {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(202, 247, 205, 0.9);
+  // rgb(202, 247, 205);
   color:linear-gradient(#571845 , #ff7c00, #fec400);
   //   border: 5px solid;
   // border-image-source: linear-gradient(200deg,#571845 , #ff7c00, #fec400);
@@ -136,19 +138,23 @@ table {
 }
 
 .img__description {
-  transition: 0.2s;
-  transform: translateY(1em);
+  padding-bottom: 10px;
+  // transition: 0.2s;
+  // transform: translateY(1em);
 }
 
-.img__wrap:hover .img__description {
-  transform: translateY(0);
-}
+// .img__wrap:hover .img__description {
+//   // transform: translateY(0);
+// }
 #name {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
+  background: -webkit-linear-gradient(#571845 35%, #ff7c00, #fec400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #desc {
-  font-size: 15px;
+  font-size: 25px;
 }
 button {
   width: 50px;

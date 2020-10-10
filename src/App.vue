@@ -263,34 +263,34 @@
             </b-nav-item>
 
             <li class="nav-item">
-              <!-- <a class="nav-link" :to="{ name: 'About' }">ראשי</a> -->
               <b-nav-item class="nav-link" :to="{ name: 'Contact' }"
                 >צור קשר</b-nav-item
               >
             </li>
             <li class="nav-item">
-              <!-- <a class="nav-link" :to="{ name: 'About' }">ראשי</a> -->
               <b-nav-item class="nav-link" :to="{ name: 'Recommand' }"
                 >המלצות</b-nav-item
               >
             </li>
             <li class="nav-item">
-              <!-- <a class="nav-link" :to="{ name: 'About' }">ראשי</a> -->
               <b-nav-item class="nav-link" :to="{ name: 'Rent' }"
                 >השכרת ציוד</b-nav-item
               >
             </li>
+              <li class="nav-item">
+              <b-nav-item class="nav-link" :to="{ name: 'Supply' }"
+                >הציוד שלנו</b-nav-item
+              >
+            </li>
             <li class="nav-item">
-              <!-- <a class="nav-link" :to="{ name: 'About' }">ראשי</a> -->
               <b-nav-item class="nav-link" :to="{ name: 'About' }"
-                >?מי אנחנו</b-nav-item
+                >אודות</b-nav-item
               >
             </li>
             <li class="nav-item">
               <b-nav-item class="nav-link" :to="{ name: 'Main' }"
                 >ראשי</b-nav-item
               >
-              <!-- <a class="nav-link" :to="{ name: 'About' }">אודות האתכג</a> -->
             </li>
           </ul>
 
