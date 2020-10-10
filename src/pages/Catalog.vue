@@ -3,12 +3,12 @@
     <div align="center">
       <table>
         <b-row id="table" alignment="right">
-          :בחר/י תאריכים להשכרה
-
-        </b-row>
-
-        <b-row id="table">
-          <DateComponent class="DateComponent" />
+          <b-col>
+            <DateComponent class="DateComponent" />
+          </b-col>
+          <b-col>
+            :בחר/י תאריכים להשכרה
+          </b-col>
         </b-row>
         <b-row id="col" v-for="p in products" :key="p.id">
           <b-col id="row" v-for="p1 in p" :key="p1.id">
@@ -60,7 +60,7 @@ export default {
         "https://res.cloudinary.com/drrtdb9ya/image/upload/v1601317414/Tiulan/WhatsApp_Image_2020-09-28_at_19.28.24_foljcd.jpg",
     };
 
-        let cooking1 = {
+    let cooking1 = {
       id: "123451",
       name: "ערכת בישול",
       price: 25,
@@ -71,8 +71,30 @@ export default {
         "https://res.cloudinary.com/drrtdb9ya/image/upload/v1601317414/Tiulan/WhatsApp_Image_2020-09-28_at_19.28.24_foljcd.jpg",
     };
 
-        let cooking2 = {
+    let cooking2 = {
       id: "123452",
+      name: "ערכת בישול",
+      price: 25,
+      amount: 5,
+      description:
+        "סיר, מחברת, צלחות, קערות, סכום, תבלינים, קרש חיתוך, כוסות, כוסות יין ועוד",
+      image:
+        "https://res.cloudinary.com/drrtdb9ya/image/upload/v1601317414/Tiulan/WhatsApp_Image_2020-09-28_at_19.28.24_foljcd.jpg",
+    };
+
+    let cooking3 = {
+      id: "123453",
+      name: "ערכת בישול",
+      price: 25,
+      amount: 5,
+      description:
+        "סיר, מחברת, צלחות, קערות, סכום, תבלינים, קרש חיתוך, כוסות, כוסות יין ועוד",
+      image:
+        "https://res.cloudinary.com/drrtdb9ya/image/upload/v1601317414/Tiulan/WhatsApp_Image_2020-09-28_at_19.28.24_foljcd.jpg",
+    };
+
+    let cooking4 = {
+      id: "123454",
       name: "ערכת בישול",
       price: 25,
       amount: 5,
@@ -92,13 +114,13 @@ export default {
       description: "אוהל ל4 נפתח ברגע",
     };
 
-   
     let data = [];
     let data1 = [];
     let data2 = [];
 
     data1.push(cooking);
     data1.push(tent4people);
+    data1.push(cooking3);
     // let cooking1 = cooking;
     // let cooking2 = cooking;
     // data1.push(cooking2);
@@ -106,6 +128,7 @@ export default {
     let tent4people2 = tent4people;
     data2.push(cooking1);
     data2.push(cooking2);
+    data2.push(cooking4);
     // data2.push(tent4people2);
 
     data.push(data1);
@@ -121,12 +144,14 @@ export default {
 #col {
   color: #571845;
   font-size: 25px;
-  width: 900px;
+  width: 1300px;
 }
-#table{
-    color: #571845;
+#table {
+  color: #571845;
+  font-size: 25px;
+  align-content: center;
 }
-#row{
-  width: 50px;
-}
+// #row{
+//   width: 50px;
+// }
 </style>
